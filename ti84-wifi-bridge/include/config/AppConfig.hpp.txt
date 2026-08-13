@@ -1,0 +1,11 @@
+#pragma once
+#include <Arduino.h>
+
+namespace Config {
+    extern const char* REPO_OWNER;
+    extern const char* REPO_NAME;
+    extern const char* FILE_PATH;
+    extern const uint32_t SERIAL_BAUD_RATE;
+    
+    String getApiUrl();
+}

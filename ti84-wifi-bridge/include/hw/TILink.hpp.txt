@@ -1,0 +1,14 @@
+#pragma once
+#include <Arduino.h>
+
+class TILink {
+public:
+    TILink(uint32_t baudRate);
+    void begin();
+    bool hasData();
+    String readMessage();
+    void writeMessage(const String& msg);
+    
+private:
+    uint32_t _baudRate;
+};
